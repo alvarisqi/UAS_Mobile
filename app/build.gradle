@@ -4,6 +4,7 @@ plugins {
     id 'kotlin-kapt'
     id("androidx.navigation.safeargs.kotlin")
 }
+apply plugin: 'kotlin-android'
 
 android {
     compileSdk 32
@@ -72,4 +73,10 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
     //coil
     implementation 'io.coil-kt:coil:0.9.5'
+    implementation "androidx.core:core-ktx:+"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+        mavenCentral()
 }
