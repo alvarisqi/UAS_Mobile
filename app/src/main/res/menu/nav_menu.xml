@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/categoryFragment"
-        android:icon="@drawable/ic_tv"
+        android:icon="@drawable/ic_baseline_food_bank_24"
         android:title="Category" />
     <item
         android:id="@+id/mealFragment"
-        android:icon="@drawable/ic_movie"
+        android:icon="@drawable/ic_baseline_fastfood_24"
         android:title="Meal" />
     <item
         android:id="@+id/britishFragment"
-        android:icon="@drawable/ic_tv"
+        android:icon="@drawable/ic_baseline_emoji_food_beverage_24"
         android:title="British" />
 </menu>

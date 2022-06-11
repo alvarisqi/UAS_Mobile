@@ -8,11 +8,11 @@ data class Category(val strCategory: String,
 data class CategoryResponse(val categories: List<Category>)
 
 data class Meal(val strMeal: String,
-                    val strMealThumb: String,
-val idMeal: String) : Serializable
+                val strMealThumb: String,
+                val idMeal: String) : Serializable
 data class MealResponse(val meals: List<Meal>)
 
 data class British(val strMeal: String,
-                val strMealThumb: String,
-val idMeal: String) : Serializable
+                   val strMealThumb: String,
+                   val idMeal: String) : Serializable
 data class BritishResponse(val meals: List<British>)
