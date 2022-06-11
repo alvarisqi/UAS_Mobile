@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/categoryFragment">
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.makanan.ui.category.CategoryFragment"
+        android:label="CategoryFragment" >
+        <action
+            android:id="@+id/action_categoryFragment_to_categoryDetailsFragment"
+            app:destination="@id/categoryDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryDetailsFragment"
+        android:name="com.example.makanan.ui.category_details.CategoryDetailsFragment"
+        android:label="CategoryDetailsFragment" >
+        <action
+            android:id="@+id/action_categoryDetailsFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mealFragment"
+        android:name="com.example.makanan.ui.meal.MealFragment"
+        android:label="MealFragment" >
+        <action
+            android:id="@+id/action_mealFragment_to_mealDetailsFragment"
+            app:destination="@id/mealDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mealDetailsFragment"
+        android:name="com.example.makanan.ui.meal_details.MealDetailsFragment"
+        android:label="MealDetailsFragment" >
+        <action
+            android:id="@+id/action_mealDetailsFragment_to_mealFragment"
+            app:destination="@id/mealFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/britishFragment"
+        android:name="com.example.makanan.ui.british.BritishFragment"
+        android:label="BritishFragment" >
+        <action
+            android:id="@+id/action_britishFragment_to_britishDetailsFragment"
+            app:destination="@id/britishDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/britishDetailsFragment"
+        android:name="com.example.makanan.ui.british_details.BritishDetailsFragment"
+        android:label="BritishDetailsFragment" >
+        <action
+            android:id="@+id/action_britishDetailsFragment_to_britishFragment"
+            app:destination="@id/britishFragment" />
+    </fragment>
+</navigation>
